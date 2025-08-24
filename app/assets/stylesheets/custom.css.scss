@@ -12,11 +12,20 @@
 
 .navbar-nav li a{
   color: white ;
+  text-shadow:
+     -1px -1px 0 #FF7400,  
+      1px -1px 0 #FF7400,  
+     -1px  1px 0 #FF7400,  
+      1px  1px 0 #FF7400;
 }
 
 .navbar-brand {
   color: white ;
-  
+  text-shadow:
+     -1px -1px 0 #FF7400,  
+      1px -1px 0 #FF7400,  
+     -1px  1px 0 #FF7400,  
+      1px  1px 0 #FF7400;
 
 }
 
@@ -309,7 +318,11 @@ background-size: cover; /* version standardisée */
 
 body h1 {
 	color: rgb(255, 255, 255);
-    
+    text-shadow:
+     -1px -1px 0 #FF7400,  
+      1px -1px 0 #FF7400,  
+     -1px  1px 0 #FF7400,  
+      1px  1px 0 #FF7400;
     text-align: center;
     
     
@@ -317,7 +330,11 @@ body h1 {
 
 body h2 {
 	color: rgb(255, 255, 255);
-    
+    text-shadow:
+     -1px -1px 0 #FF7400,  
+      1px -1px 0 #FF7400,  
+     -1px  1px 0 #FF7400,  
+      1px  1px 0 #FF7400;
     text-align: center;
 }
 
