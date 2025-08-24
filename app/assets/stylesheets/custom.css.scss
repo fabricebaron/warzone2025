@@ -294,10 +294,10 @@ body:before {
     position: fixed;
     height: 100%; width: 100%;
     top: 0px;
-    background-image : url('https://static0.srcdn.com/wordpress/wp-content/uploads/sharedimages/2025/06/cod-black-ops-7-tag-page-cover-art.jpg');
+    background-image : url('https://image.api.playstation.com/vulcan/ap/rnd/202508/2217/1d5e8c1764fac44badc8c34c418424e39b3e8ae7a130ded6.jpg');
     background-size: cover;
     z-index: -1; /* Keep the background behind the content */     
-    -webkit-filter: blur(2px);
+    -webkit-filter: blur(0px);
 -webkit-background-size: cover; /* pour Chrome et Safari */
 -moz-background-size: cover; /* pour Firefox */
 -o-background-size: cover; /* pour Opera */
