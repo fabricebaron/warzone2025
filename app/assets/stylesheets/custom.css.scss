@@ -298,6 +298,8 @@ body:before {
     background-size: cover;
     z-index: -1; /* Keep the background behind the content */     
     -webkit-filter: blur(0px);
+    background-position: center center;      /* centre l'image */
+    background-repeat: no-repeat;   
 -webkit-background-size: cover; /* pour Chrome et Safari */
 -moz-background-size: cover; /* pour Firefox */
 -o-background-size: cover; /* pour Opera */
