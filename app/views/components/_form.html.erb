@@ -1,0 +1,13 @@
+<%= form_with model: @component, local: true do |f| %>
+  <div class="mb-2"><%= f.label :category %><br><%= f.text_field :category, class: "form-control" %></div>
+  <div class="mb-2"><%= f.label :ranking %><br><%= f.number_field :ranking, class: "form-control" %></div>
+  <div class="mb-2"><%= f.label :component_name, "Nom du composant" %><br><%= f.text_field :component_name, class: "form-control" %></div>
+  <div class="mb-2"><%= f.label :avg_fps_1080 %><br><%= f.number_field :avg_fps_1080, step: 0.1, class: "form-control" %></div>
+  <div class="mb-2"><%= f.label :avg_fps_1440 %><br><%= f.number_field :avg_fps_1440, step: 0.1, class: "form-control" %></div>
+  <div class="mb-2"><%= f.label :avg_fps_4k %><br><%= f.number_field :avg_fps_4k, step: 0.1, class: "form-control" %></div>
+  <div class="mb-2"><%= f.label :avg_fps_1080_1, "FPS 1% 1080p" %><br><%= f.number_field :avg_fps_1080_1, step: 0.1, class: "form-control" %></div>
+  <div class="mb-2"><%= f.label :avg_fps_1440_1, "FPS 1% 1440p" %><br><%= f.number_field :avg_fps_1440_1, step: 0.1, class: "form-control" %></div>
+  <div class="mb-2"><%= f.label :avg_fps_4k_1, "FPS 1% 4K" %><br><%= f.number_field :avg_fps_4k_1, step: 0.1, class: "form-control" %></div>
+  <div class="mb-2"><%= f.label :asin %><br><%= f.text_field :asin, class: "form-control" %></div>
+  <div class="mt-3"><%= f.submit class: "btn btn-success" %></div>
+<% end %>

@@ -1,0 +1,26 @@
+<h1><%= @component.component_name %> (<%= @component.category %>)</h1>
+
+<p>FPS moyen :</p>
+<ul>
+  <li>1080p : <%= @component.avg_fps_1080 %> (1% low : <%= @component.avg_fps_1080_1 %>)</li>
+  <li>1440p : <%= @component.avg_fps_1440 %> (1% low : <%= @component.avg_fps_1440_1 %>)</li>
+  <li>4K   : <%= @component.avg_fps_4k %> (1% low : <%= @component.avg_fps_4k_1 %>)</li>
+</ul>
+
+<h2>Offres disponibles</h2>
+<ul>
+  <% @offers.each do |offer| %>
+    <li>
+      <%= offer.vendor %> :
+      <%= number_to_currency(offer.price, unit: "€") %> -
+      <%= link_to "Acheter", offer.url, target: "_blank" %>
+      <% if offer == @best_offer %>
+        <strong>★ Meilleur prix</strong>
+      <% end %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "Modifier", edit_component_path(@component), class: "btn btn-primary" %>
+<%= link_to "Supprimer", component_path(@component), method: :delete, data: { confirm: "Êtes-vous sûr ?" }, class: "btn btn-danger" %>
+<%= link_to "Retour à la liste", components_path, class: "btn btn-secondary" %>

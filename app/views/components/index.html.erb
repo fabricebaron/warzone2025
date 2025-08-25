@@ -1,0 +1,34 @@
+<h1>Liste des composants PC</h1>
+
+<%= link_to "Ajouter un composant", new_component_path, class: "btn btn-success mb-3" %>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Classement</th>
+      <th>Nom</th>
+      <th>Catégorie</th>
+      <th>FPS 1080p</th>
+      <th>FPS 1440p</th>
+      <th>FPS 4K</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @components.each do |c| %>
+      <tr>
+        <td><%= c.ranking %></td>
+        <td><%= link_to c.component_name, component_path(c) %></td>
+        <td><%= c.category %></td>
+        <td><%= c.avg_fps_1080 %></td>
+        <td><%= c.avg_fps_1440 %></td>
+        <td><%= c.avg_fps_4k %></td>
+        <td>
+          <%= link_to "Modifier", edit_component_path(c), class: "btn btn-sm btn-primary" %>
+          <%= link_to "Supprimer", component_path(c), method: :delete, data: { confirm: "Êtes-vous sûr ?" }, class: "btn btn-sm btn-danger" %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+

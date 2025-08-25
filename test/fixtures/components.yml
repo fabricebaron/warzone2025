@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  category: MyString
+  ranking: 1
+  model_name: MyString
+  avg_fps_1080: 1.5
+  avg_fps_1440: 1.5
+  avg_fps_4k: 1.5
+  avg_fps_1080_1: 1.5
+  avg_fps_1440_1: 1.5
+  avg_fps_4k_1: 1.5
+  asin: MyString
+
+two:
+  category: MyString
+  ranking: 1
+  model_name: MyString
+  avg_fps_1080: 1.5
+  avg_fps_1440: 1.5
+  avg_fps_4k: 1.5
+  avg_fps_1080_1: 1.5
+  avg_fps_1440_1: 1.5
+  avg_fps_4k_1: 1.5
+  asin: MyString

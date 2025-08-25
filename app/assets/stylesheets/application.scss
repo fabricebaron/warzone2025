@@ -1,0 +1,11 @@
+/*
+ *= require_tree .
+ *= require_self
+*/
+
+/* Import Bootstrap */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* Import ton CSS personnalisé */
+@import "custom";
